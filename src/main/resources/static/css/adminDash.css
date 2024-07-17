@@ -1,0 +1,109 @@
+/* General styles for .main-content */
+.main-content {
+    padding: 20px;
+    width: calc(100% - 250px); /* Full width minus sidebar width */
+    margin-left: 250px; /* Margin equal to sidebar width */
+    transition: width 0.3s, margin-left 0.3s;
+    margin-top: 80px; /* Adjust top margin to account for navbar height */
+}
+
+.row {
+    margin-top: 50px;
+}
+
+/* Media query for medium screens */
+@media (max-width: 768px) {
+    .main-content {
+        width: calc(100% - 200px); /* Adjust for a smaller sidebar on medium screens if applicable */
+        margin-left: 200px; /* Adjust margin for a smaller sidebar */
+        margin-top: 60px; /* Adjust top margin for smaller screens */
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+    .main-content {
+        width: 100%; /* Full width on small screens */
+        margin-left: 0; /* No left margin on small screens */
+        margin-top: 60px; /* Adjust top margin for smaller screens */
+    }
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card-body i {
+    color: #fff; /* Ensure icon color contrasts with card background */
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Grid column spacing */
+.row > .col-md-4 {
+    padding-bottom: 20px; /* Space between rows of cards */
+}
+
+/* Background colors for specific card types */
+.pending-leaves {
+    background-color: #f39c12; /* Orange */
+}
+
+.approved-leaves {
+    background-color: #28a745; /* Green */
+}
+
+.rejected-leaves {
+    background-color: #dc3545; /* Red */
+}
+
+.departments {
+    background-color: #3498db; /* Blue */
+}
+
+.employees {
+    background-color: #9b59b6; /* Purple */
+}
+
+.leave-types {
+    background-color: #1abc9c; /* Turquoise */
+}

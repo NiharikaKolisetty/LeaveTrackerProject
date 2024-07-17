@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+    color: #ffffff; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: left; /* Align text to the left */
+    margin: 20px; /* Margin for spacing */
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center; /* Center align heading */
+}
+
+/* Form Input Styles */
+.form-control {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent input background */
+    color: #ffffff; /* Text color */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+/* Placeholder Styles */
+.form-control::placeholder {
+    color: #cccccc; /* Placeholder text color */
+}
+
+/* Checkbox Styles */
+.form-check-input {
+    background: rgba(255, 255, 255, 0.2); /* Checkbox background */
+    border-color: rgba(255, 255, 255, 0.3); /* Checkbox border color */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #ffffff; /* Button background color */
+    color: #2a5298; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px 20px; /* Padding */
+    font-size: 1em; /* Font size */
+    font-weight: bold; /* Font weight */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 20px; /* Top margin */
+    transition: background-color 0.3s; /* Smooth transition */
+    width: 100%; /* Full width button */
+}
+
+/* Button Hover Styles */
+.btn-primary:hover {
+    background-color: #f0f0f0; /* Hover background color */
+    color: #2a5298; /* Hover text color */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and mobile devices (portrait and landscape) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Reduced padding on smaller screens */
+        max-width: 90%; /* Adjust container width */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .form-control {
+        padding: 8px; /* Reduced padding for inputs */
+    }
+
+    .btn-primary {
+        padding: 10px 15px; /* Adjust button padding */
+        font-size: 0.9em; /* Adjust font size for button */
+    }
+}
+
+/* For mobile devices (portrait) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25em; /* Further reduce heading size */
+    }
+
+    .form-control {
+        padding: 6px; /* Further reduced padding for inputs */
+    }
+
+    .btn-primary {
+        padding: 8px 12px; /* Further adjust button padding */
+        font-size: 0.8em; /* Further adjust button font size */
+    }
+}

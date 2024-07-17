@@ -1,0 +1,13 @@
+    /* Main Content Styles */
+.main-content {
+  margin-top: 80px;
+  margin-left: 250px; /* Adjust margin to account for the sidebar */
+  font-size: 30px;
+  transition: margin-left 0.3s;
+}
+
+@media (max-width: 576px) {
+  .main-content {
+    margin-left: 0;
+  }
+}

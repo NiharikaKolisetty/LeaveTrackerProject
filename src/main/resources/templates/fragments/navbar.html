@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" th:href="@{/css/navbar.css}">
+</head>
+<body>
+<div class="top-navbar" th:fragment="navbar">
+  <span class="toggle-btn" onclick="toggleSidebar()">&#9776;</span>
+  <div class="user-info">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown">
+        <span th:text="${#authentication.principal.username}"></span>
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+<!--        <li><a class="dropdown-item" href="#profile">Profile</a></li>-->
+        <li><a class="dropdown-item" th:href="@{/logout}">Logout</a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlXqEfiZeBk6GmZoAYBDoN1w8gLaLGA9CZ92N3+lwOnTKPxAE5Yp5rGyLrK" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGg8a3rsrBzQf0h3V66yFQpFHpOn9PIL3VVkDOq6c87p4uANMzu+N67Nlg" crossorigin="anonymous"></script>
+</body>
+</html>

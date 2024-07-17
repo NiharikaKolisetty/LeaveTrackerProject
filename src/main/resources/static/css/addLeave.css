@@ -1,0 +1,24 @@
+/* Form Container Styling */
+.custom-form {
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  margin: 0 auto; /* Center the form */
+  margin-top: 20px; /* Add margin-top if needed */
+}
+
+p {
+  color: grey;
+}
+
+.custom-form .form-group {
+  margin-bottom: 15px;
+}
+
+.custom-form .btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
